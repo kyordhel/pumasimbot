@@ -1,0 +1,16 @@
+# Ignore everything
+*
+# But these files
+!.gitignore
+!.gitattributes
+!build.sh
+!CMakeLists.txt
+!LICENSE
+!readme
+!readme.MD
+!README
+# And these filetypes
+!*.clp
+!*.dat
+# Even if they are in subdirectories
+!**/

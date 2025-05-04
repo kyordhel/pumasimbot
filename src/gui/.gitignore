@@ -1,0 +1,10 @@
+# Ignore everything
+*
+# But these files
+!.gitignore
+!.gitattributes
+!.readme.MD
+# And these filetypes
+!*.py
+# Even if they are in subdirectories
+!**/

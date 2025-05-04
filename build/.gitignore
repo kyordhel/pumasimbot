@@ -1,0 +1,8 @@
+# Ignore everything
+*
+# But these files
+!.gitignore
+!.gitattributes
+!readme
+!README
+!readme.MD

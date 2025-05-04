@@ -1,0 +1,20 @@
+# Ignore everything
+*
+# But these files
+!.gitignore
+!.gitattributes
+!build.sh
+!CMakeLists.txt
+!LICENSE
+!readme.MD
+!readme
+!README
+!start.sh
+!start_planning.sh
+# And these filetypes
+!*.cmake
+# And these subdirectories
+!build
+!gui
+!data
+!src

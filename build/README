@@ -1,0 +1,6 @@
+To build execute the following commands from here:
+
+cmake ..
+make
+
+Executables will be created inside bin

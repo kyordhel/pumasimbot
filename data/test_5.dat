@@ -1,0 +1,87 @@
+../motion_planner/GoTo_State_Machine -x 0.350000 -y 0.437500 -a 0.000000 -v 0.860000 -z 0.437500 -s laser -n 16 -t -2.356100 -r 4.712200 -p ../../data_pumasimbot/ -e obstacle -advance 0.030000 -MaxAngle 0.785400 -selection 5 -largest 0.100000 -noise 1 -omni 1 -vq 0 -size_vq 0 -pr_out 0 -out_file obstacle -nn_rec 0 -nn_unk 0 -search 1
+
+observations file: ../../data_pumasimbot/obstacle.raw
+
+ Radio robot 0.020000 
+( origen 0.350000 0.437500 0.000000 )
+( destination 0.860000 0.437500 )
+search method 1
+
+
+ ************************************************************
+distance destination 0.510000 threshold 0.075600
+1 Pose robot 0.350000 0.437500 0.000000 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.070711
+range observations.sensors[6] 0.056119
+range observations.sensors[7] 0.050627
+range observations.sensors[8] 0.050628
+range observations.sensors[9] 0.056122
+range observations.sensors[10] 0.070718
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.000000
+intensity 3.844676 angle light 0.000000 
+Random settings file ../../data_pumasimbot/random_settings_advance_angle_sensors.dat
+lidar noise mean 0.001000 variance 0.000100
+Intensity lmin -5.000000 lmax 5.000000
+Angle Light lmin -0.062832 lmax 0.062832
+with noise intensity 7.409883 angle light 5.436170 
+noised range sensors[0] 0.102170
+noised range sensors[1] 0.101601
+noised range sensors[2] 0.100568
+noised range sensors[3] 0.097885
+noised range sensors[4] 0.096536
+noised range sensors[5] 0.079938
+noised range sensors[6] 0.074346
+noised range sensors[7] 0.054539
+noised range sensors[8] 0.058560
+noised range sensors[9] 0.055714
+noised range sensors[10] 0.077280
+noised range sensors[11] 0.097586
+noised range sensors[12] 0.111769
+noised range sensors[13] 0.098515
+noised range sensors[14] 0.112885
+noised range sensors[15] 0.091722
+THRS_SENSOR 0.070000
+Interval 8 THRS_SENSOR 0.070000
+left sensor 0.088004
+right sensor 0.088448
+angle_light 5.436170 quantized destination 2 
+quantized inputs 0
+intensity 7.409883 quantized intensity 0 
+
+
+ **************** Student Reactive Behavior 1 *********************
+right side sensor[0] 0.102170
+right side sensor[1] 0.101601
+right side sensor[2] 0.100568
+right side sensor[3] 0.097885
+right side sensor[4] 0.096536
+right side sensor[5] 0.079938
+right side sensor[6] 0.074346
+right side sensor[7] 0.054539
+left side sensor[8] 0.058560
+left side sensor[9] 0.055714
+left side sensor[10] 0.077280
+left side sensor[11] 0.097586
+left side sensor[12] 0.111769
+left side sensor[13] 0.098515
+left side sensor[14] 0.112885
+left side sensor[15] 0.091722
+Average right side 0.088448
+Average left side 0.088004
+intensity 0 obstacles 0 dest 2
+RIGHT_ADVANCE
+TURN RIGHT
+Student reactive behavior movement avoidance destination: angle  -0.785400 distance 0.030000
+movement without noise: angle  -0.785400 distance 0.030000
+Random settings file ../../data_pumasimbot/random_settings_advance_angle_sensors.dat
+movement with noise: angle  -0.820351 distance 0.031648

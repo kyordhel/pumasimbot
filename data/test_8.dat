@@ -1,0 +1,2928 @@
+../motion_planner/GoTo_State_Machine -x 0.785764 -y 0.229783 -a 5.497800 -v 0.135000 -z 0.847500 -s laser -n 16 -t -2.356100 -r 4.712200 -p ../../data_pumasimbot/ -e obstacle -advance 0.020000 -MaxAngle 0.785400 -selection 8 -largest 0.100000 -noise 0 -omni 1 -vq 0 -size_vq 0 -pr_out 0 -out_file obstacle -nn_rec 0 -nn_unk 0 -search 1
+
+observations file: ../../data_pumasimbot/obstacle.raw
+
+ Radio robot 0.020000 
+( origen 0.785764 0.229783 5.497800 )
+( destination 0.135000 0.847500 )
+search method 1
+
+
+ ************************************************************
+distance destination 0.897256 threshold 0.050400
+1 Pose robot 0.785764 0.229783 5.497800 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 3.167627
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+THRS_SENSOR 0.070000
+Interval 8 THRS_SENSOR 0.070000
+left sensor 0.100000
+right sensor 0.100000
+angle_light 3.167627 quantized destination 0 
+quantized inputs 0
+intensity 1.242131 quantized intensity 0 
+quantized inputs 0
+rotation 0.000000 advance 0.000000
+Starting CLIPS
+Clips_file oracle.clp
+Connected to CLIPS server
+publish alive clips 
+Answer CLIPS Clips alive
+
+Send fact (max-advance  0.020000 max-rotation 0.785400)
+Answer CLIPS received max advance rotation
+
+rotation 0.000000 advance 0.000000
+movement without noise: angle  0.000000 distance 0.000000
+
+
+ ************************************************************
+distance destination 0.897256 threshold 0.050400
+2 Pose robot 0.785764 0.229783 5.497800 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 3.167627
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+THRS_SENSOR 0.070000
+Interval 8 THRS_SENSOR 0.070000
+left sensor 0.100000
+right sensor 0.100000
+angle_light 3.167627 quantized destination 0 
+quantized inputs 0
+intensity 1.242131 quantized intensity 0 
+quantized inputs 0
+rotation 0.000000 advance 0.000000
+Send fact (step  1 intensity 1.242131 obs 0 dest 0)
+Answer CLIPS goto 1 -2.3562 0.02 0.5
+
+rotation -2.356200 advance 0.020000 status 0.500000
+movement without noise: angle  -2.356200 distance 0.020000
+
+
+ ************************************************************
+distance destination 0.882858 threshold 0.050400
+3 Pose robot 0.765764 0.229783 3.141600 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 5.508230
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+THRS_SENSOR 0.070000
+Interval 8 THRS_SENSOR 0.070000
+left sensor 0.100000
+right sensor 0.100000
+angle_light 5.508230 quantized destination 2 
+quantized inputs 0
+intensity 1.282976 quantized intensity 0 
+quantized inputs 0
+rotation -2.356200 advance 0.020000
+Send fact (step  2 intensity 1.282976 obs 0 dest 2)
+Answer CLIPS goto 2 -0.7854 0.02 0.5
+
+rotation -0.785400 advance 0.020000 status 0.500000
+movement without noise: angle  -0.785400 distance 0.020000
+
+
+ ************************************************************
+distance destination 0.862859 threshold 0.050400
+4 Pose robot 0.751622 0.243925 2.356200 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.010686
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+THRS_SENSOR 0.070000
+Interval 8 THRS_SENSOR 0.070000
+left sensor 0.100000
+right sensor 0.100000
+angle_light 0.010686 quantized destination 3 
+quantized inputs 0
+intensity 1.343138 quantized intensity 0 
+quantized inputs 0
+rotation -0.785400 advance 0.020000
+Send fact (step  3 intensity 1.343138 obs 0 dest 3)
+Answer CLIPS goto 3 0.7854 0.02 0.5
+
+rotation 0.785400 advance 0.020000 status 0.500000
+movement without noise: angle  0.785400 distance 0.020000
+
+
+ ************************************************************
+distance destination 0.848682 threshold 0.050400
+5 Pose robot 0.731622 0.243925 3.141600 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 5.491986
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+THRS_SENSOR 0.070000
+Interval 8 THRS_SENSOR 0.070000
+left sensor 0.100000
+right sensor 0.100000
+angle_light 5.491986 quantized destination 2 
+quantized inputs 0
+intensity 1.388386 quantized intensity 0 
+quantized inputs 0
+rotation 0.785400 advance 0.020000
+Send fact (step  4 intensity 1.388386 obs 0 dest 2)
+Answer CLIPS goto 4 -0.7854 0.02 0.5
+
+rotation -0.785400 advance 0.020000 status 0.500000
+movement without noise: angle  -0.785400 distance 0.020000
+
+
+ ************************************************************
+distance destination 0.828682 threshold 0.050400
+6 Pose robot 0.717480 0.258067 2.356200 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 6.277246
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+THRS_SENSOR 0.070000
+Interval 8 THRS_SENSOR 0.070000
+left sensor 0.100000
+right sensor 0.100000
+angle_light 6.277246 quantized destination 2 
+quantized inputs 0
+intensity 1.456210 quantized intensity 0 
+quantized inputs 0
+rotation -0.785400 advance 0.020000
+Send fact (step  5 intensity 1.456210 obs 0 dest 2)
+Answer CLIPS goto 5 -0.7854 0.02 0.5
+
+rotation -0.785400 advance 0.020000 status 0.500000
+movement without noise: angle  -0.785400 distance 0.020000
+
+
+ ************************************************************
+distance destination 0.814578 threshold 0.050400
+7 Pose robot 0.717480 0.278067 1.570800 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.796720
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+THRS_SENSOR 0.070000
+Interval 8 THRS_SENSOR 0.070000
+left sensor 0.100000
+right sensor 0.100000
+angle_light 0.796720 quantized destination 3 
+quantized inputs 0
+intensity 1.507076 quantized intensity 0 
+quantized inputs 0
+rotation -0.785400 advance 0.020000
+Send fact (step  6 intensity 1.507076 obs 0 dest 3)
+Answer CLIPS goto 6 0.7854 0.02 0.5
+
+rotation 0.785400 advance 0.020000 status 0.500000
+movement without noise: angle  0.785400 distance 0.020000
+
+
+ ************************************************************
+distance destination 0.794579 threshold 0.050400
+8 Pose robot 0.703337 0.292209 2.356200 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.011605
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+THRS_SENSOR 0.070000
+Interval 8 THRS_SENSOR 0.070000
+left sensor 0.100000
+right sensor 0.100000
+angle_light 0.011605 quantized destination 3 
+quantized inputs 0
+intensity 1.583893 quantized intensity 0 
+quantized inputs 0
+rotation 0.785400 advance 0.020000
+Send fact (step  7 intensity 1.583893 obs 0 dest 3)
+Answer CLIPS goto 7 0.7854 0.02 0.5
+
+rotation 0.785400 advance 0.020000 status 0.500000
+movement without noise: angle  0.785400 distance 0.020000
+
+
+ ************************************************************
+distance destination 0.780399 threshold 0.050400
+9 Pose robot 0.683337 0.292209 3.141600 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 5.491479
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+THRS_SENSOR 0.070000
+Interval 8 THRS_SENSOR 0.070000
+left sensor 0.100000
+right sensor 0.100000
+angle_light 5.491479 quantized destination 2 
+quantized inputs 0
+intensity 1.641976 quantized intensity 0 
+quantized inputs 0
+rotation 0.785400 advance 0.020000
+Send fact (step  8 intensity 1.641976 obs 0 dest 2)
+Answer CLIPS goto 8 -0.7854 0.02 0.5
+
+rotation -0.785400 advance 0.020000 status 0.500000
+movement without noise: angle  -0.785400 distance 0.020000
+
+
+ ************************************************************
+distance destination 0.760399 threshold 0.050400
+10 Pose robot 0.669195 0.306351 2.356200 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.085518
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 6.276713
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.085518
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+THRS_SENSOR 0.070000
+Interval 8 THRS_SENSOR 0.070000
+left sensor 0.098190
+right sensor 0.100000
+angle_light 6.276713 quantized destination 2 
+quantized inputs 0
+intensity 1.729485 quantized intensity 0 
+quantized inputs 0
+rotation -0.785400 advance 0.020000
+Send fact (step  9 intensity 1.729485 obs 0 dest 2)
+Answer CLIPS goto 9 -0.7854 0.02 0.5
+
+rotation -0.785400 advance 0.020000 status 0.500000
+movement without noise: angle  -0.785400 distance 0.020000
+
+
+ ************************************************************
+distance destination 0.746298 threshold 0.050400
+11 Pose robot 0.669195 0.326351 1.570800 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.097848
+range observations.sensors[11] 0.077650
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.797755
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.097848
+noised range sensors[11] 0.077650
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+THRS_SENSOR 0.070000
+Interval 8 THRS_SENSOR 0.070000
+left sensor 0.096937
+right sensor 0.100000
+angle_light 0.797755 quantized destination 3 
+quantized inputs 0
+intensity 1.795458 quantized intensity 0 
+quantized inputs 0
+rotation -0.785400 advance 0.020000
+Send fact (step  10 intensity 1.795458 obs 0 dest 3)
+Answer CLIPS goto 10 0.7854 0.02 0.5
+
+rotation 0.785400 advance 0.020000 status 0.500000
+movement without noise: angle  0.785400 distance 0.020000
+
+
+ ************************************************************
+distance destination 0.726300 threshold 0.050400
+12 Pose robot 0.655053 0.340493 2.356200 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.093649
+range observations.sensors[8] 0.068039
+range observations.sensors[9] 0.057876
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.012696
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.093649
+noised range sensors[8] 0.068039
+noised range sensors[9] 0.057876
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+THRS_SENSOR 0.070000
+Interval 8 THRS_SENSOR 0.070000
+left sensor 0.090739
+right sensor 0.099206
+angle_light 0.012696 quantized destination 3 
+quantized inputs 0
+intensity 1.895694 quantized intensity 0 
+quantized inputs 0
+rotation 0.785400 advance 0.020000
+Send fact (step  11 intensity 1.895694 obs 0 dest 3)
+Answer CLIPS goto 11 0.7854 0.02 0.5
+
+rotation 0.785400 advance 0.020000 status 0.500000
+movement without noise: angle  0.785400 distance 0.020000
+
+
+ ************************************************************
+distance destination 0.712116 threshold 0.050400
+13 Pose robot 0.635053 0.340493 3.141600 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.077187
+range observations.sensors[5] 0.049558
+range observations.sensors[6] 0.039329
+range observations.sensors[7] 0.060788
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 5.490874
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.077187
+noised range sensors[5] 0.049558
+noised range sensors[6] 0.039329
+noised range sensors[7] 0.060788
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+THRS_SENSOR 0.070000
+Interval 8 THRS_SENSOR 0.070000
+left sensor 0.100000
+right sensor 0.078358
+angle_light 5.490874 quantized destination 2 
+quantized inputs 0
+intensity 1.971961 quantized intensity 0 
+quantized inputs 0
+rotation 0.785400 advance 0.020000
+Send fact (step  12 intensity 1.971961 obs 0 dest 2)
+Answer CLIPS goto 12 -0.7854 0.02 0.5
+
+rotation -0.785400 advance 0.020000 status 0.500000
+movement without noise: angle  -0.785400 distance 0.020000
+
+
+ ************************************************************
+distance destination 0.692117 threshold 0.050400
+14 Pose robot 0.620911 0.354635 2.356200 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.067642
+range observations.sensors[7] 0.035560
+range observations.sensors[8] 0.025836
+range observations.sensors[9] 0.021977
+range observations.sensors[10] 0.020901
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 6.276074
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.067642
+noised range sensors[7] 0.035560
+noised range sensors[8] 0.025836
+noised range sensors[9] 0.021977
+noised range sensors[10] 0.020901
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+THRS_SENSOR 0.070000
+Interval 8 THRS_SENSOR 0.070000
+left sensor 0.071089
+right sensor 0.087900
+angle_light 6.276074 quantized destination 2 
+quantized inputs 0
+intensity 2.087572 quantized intensity 0 
+quantized inputs 0
+rotation -0.785400 advance 0.020000
+Send fact (step  13 intensity 2.087572 obs 0 dest 2)
+Answer CLIPS goto 13 -0.7854 0.02 0.5
+
+rotation -0.785400 advance 0.020000 status 0.500000
+movement without noise: angle  -0.785400 distance 0.020000
+
+
+ ************************************************************
+distance destination 0.678020 threshold 0.050400
+15 Pose robot 0.620911 0.374635 1.570800 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.046046
+range observations.sensors[10] 0.029562
+range observations.sensors[11] 0.023460
+range observations.sensors[12] 0.021163
+range observations.sensors[13] 0.021162
+range observations.sensors[14] 0.023457
+range observations.sensors[15] 0.029555
+light source angle 0.799000
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.046046
+noised range sensors[10] 0.029562
+noised range sensors[11] 0.023460
+noised range sensors[12] 0.021163
+noised range sensors[13] 0.021162
+noised range sensors[14] 0.023457
+noised range sensors[15] 0.029555
+THRS_SENSOR 0.070000
+Interval 8 THRS_SENSOR 0.070000
+left sensor 0.036801
+right sensor 0.100000
+angle_light 0.799000 quantized destination 3 
+quantized inputs 2
+intensity 2.175282 quantized intensity 0 
+quantized inputs 2
+rotation -0.785400 advance 0.020000
+Send fact (step  14 intensity 2.175282 obs 2 dest 3)
+Answer CLIPS goto 14 -0.7854 0.02 0.5
+
+rotation -0.785400 advance 0.020000 status 0.500000
+movement without noise: angle  -0.785400 distance 0.020000
+
+
+ ************************************************************
+distance destination 0.678586 threshold 0.050400
+16 Pose robot 0.635053 0.388777 0.785400 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.059630
+range observations.sensors[13] 0.043321
+range observations.sensors[14] 0.036850
+range observations.sensors[15] 0.035045
+light source angle 1.613874
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.059630
+noised range sensors[13] 0.043321
+noised range sensors[14] 0.036850
+noised range sensors[15] 0.035045
+THRS_SENSOR 0.070000
+Interval 8 THRS_SENSOR 0.070000
+left sensor 0.071856
+right sensor 0.100000
+angle_light 1.613874 quantized destination 1 
+quantized inputs 0
+intensity 2.171649 quantized intensity 0 
+quantized inputs 0
+rotation -0.785400 advance 0.020000
+Send fact (step  15 intensity 2.171649 obs 0 dest 1)
+Answer CLIPS goto 15 1.5708 0.02 0.5
+
+rotation 1.570800 advance 0.020000 status 0.500000
+movement without noise: angle  1.570800 distance 0.020000
+
+
+ ************************************************************
+distance destination 0.658606 threshold 0.050400
+17 Pose robot 0.620910 0.402919 2.356200 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.067649
+range observations.sensors[7] 0.035564
+range observations.sensors[8] 0.025839
+range observations.sensors[9] 0.021979
+range observations.sensors[10] 0.020903
+range observations.sensors[11] 0.021978
+range observations.sensors[12] 0.025836
+range observations.sensors[13] 0.035557
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.044382
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.067649
+noised range sensors[7] 0.035564
+noised range sensors[8] 0.025839
+noised range sensors[9] 0.021979
+noised range sensors[10] 0.020903
+noised range sensors[11] 0.021978
+noised range sensors[12] 0.025836
+noised range sensors[13] 0.035557
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+THRS_SENSOR 0.070000
+Interval 8 THRS_SENSOR 0.070000
+left sensor 0.044012
+right sensor 0.087902
+angle_light 0.044382 quantized destination 3 
+quantized inputs 2
+intensity 2.305416 quantized intensity 0 
+quantized inputs 2
+rotation 1.570800 advance 0.020000
+Send fact (step  16 intensity 2.305416 obs 2 dest 3)
+Answer CLIPS goto 16 -0.7854 0.02 0.5
+
+rotation -0.785400 advance 0.020000 status 0.500000
+movement without noise: angle  -0.785400 distance 0.020000
+
+
+ ************************************************************
+distance destination 0.645274 threshold 0.050400
+18 Pose robot 0.620910 0.422919 1.570800 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.046051
+range observations.sensors[10] 0.029565
+range observations.sensors[11] 0.023462
+range observations.sensors[12] 0.021165
+range observations.sensors[13] 0.021164
+range observations.sensors[14] 0.023460
+range observations.sensors[15] 0.029559
+light source angle 0.852652
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.046051
+noised range sensors[10] 0.029565
+noised range sensors[11] 0.023462
+noised range sensors[12] 0.021165
+noised range sensors[13] 0.021164
+noised range sensors[14] 0.023460
+noised range sensors[15] 0.029559
+THRS_SENSOR 0.070000
+Interval 8 THRS_SENSOR 0.070000
+left sensor 0.036803
+right sensor 0.100000
+angle_light 0.852652 quantized destination 3 
+quantized inputs 2
+intensity 2.401664 quantized intensity 0 
+quantized inputs 2
+rotation -0.785400 advance 0.020000
+Send fact (step  17 intensity 2.401664 obs 2 dest 3)
+Answer CLIPS goto 17 -0.7854 0.02 0.5
+
+rotation -0.785400 advance 0.020000 status 0.500000
+movement without noise: angle  -0.785400 distance 0.020000
+
+
+ ************************************************************
+distance destination 0.646925 threshold 0.050400
+19 Pose robot 0.635053 0.437061 0.785400 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.059634
+range observations.sensors[13] 0.043324
+range observations.sensors[14] 0.036852
+range observations.sensors[15] 0.035047
+light source angle 1.668902
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.059634
+noised range sensors[13] 0.043324
+noised range sensors[14] 0.036852
+noised range sensors[15] 0.035047
+THRS_SENSOR 0.070000
+Interval 8 THRS_SENSOR 0.070000
+left sensor 0.071857
+right sensor 0.100000
+angle_light 1.668902 quantized destination 1 
+quantized inputs 0
+intensity 2.389415 quantized intensity 0 
+quantized inputs 0
+rotation -0.785400 advance 0.020000
+Send fact (step  18 intensity 2.389415 obs 0 dest 1)
+Answer CLIPS goto 18 1.5708 0.02 0.5
+
+rotation 1.570800 advance 0.020000 status 0.500000
+movement without noise: angle  1.570800 distance 0.020000
+
+
+ ************************************************************
+distance destination 0.627025 threshold 0.050400
+20 Pose robot 0.620910 0.451203 2.356200 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.067657
+range observations.sensors[7] 0.035568
+range observations.sensors[8] 0.025841
+range observations.sensors[9] 0.021982
+range observations.sensors[10] 0.020905
+range observations.sensors[11] 0.021981
+range observations.sensors[12] 0.025839
+range observations.sensors[13] 0.035561
+range observations.sensors[14] 0.067625
+range observations.sensors[15] 0.100000
+light source angle 0.101226
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.067657
+noised range sensors[7] 0.035568
+noised range sensors[8] 0.025841
+noised range sensors[9] 0.021982
+noised range sensors[10] 0.020905
+noised range sensors[11] 0.021981
+noised range sensors[12] 0.025839
+noised range sensors[13] 0.035561
+noised range sensors[14] 0.067625
+noised range sensors[15] 0.100000
+THRS_SENSOR 0.070000
+Interval 8 THRS_SENSOR 0.070000
+left sensor 0.039967
+right sensor 0.087903
+angle_light 0.101226 quantized destination 3 
+quantized inputs 2
+intensity 2.543494 quantized intensity 0 
+quantized inputs 2
+rotation 1.570800 advance 0.020000
+Send fact (step  19 intensity 2.543494 obs 2 dest 3)
+Answer CLIPS goto 19 -0.7854 0.02 0.5
+
+rotation -0.785400 advance 0.020000 status 0.500000
+movement without noise: angle  -0.785400 distance 0.020000
+
+
+ ************************************************************
+distance destination 0.614580 threshold 0.050400
+21 Pose robot 0.620910 0.471203 1.570800 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.046056
+range observations.sensors[10] 0.029568
+range observations.sensors[11] 0.023465
+range observations.sensors[12] 0.021167
+range observations.sensors[13] 0.021167
+range observations.sensors[14] 0.023462
+range observations.sensors[15] 0.029562
+light source angle 0.911847
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.046056
+noised range sensors[10] 0.029568
+noised range sensors[11] 0.023465
+noised range sensors[12] 0.021167
+noised range sensors[13] 0.021167
+noised range sensors[14] 0.023462
+noised range sensors[15] 0.029562
+THRS_SENSOR 0.070000
+Interval 8 THRS_SENSOR 0.070000
+left sensor 0.036806
+right sensor 0.100000
+angle_light 0.911847 quantized destination 3 
+quantized inputs 2
+intensity 2.647547 quantized intensity 0 
+quantized inputs 2
+rotation -0.785400 advance 0.020000
+Send fact (step  20 intensity 2.647547 obs 2 dest 3)
+Answer CLIPS goto 20 -0.7854 0.02 0.5
+
+rotation -0.785400 advance 0.020000 status 0.500000
+movement without noise: angle  -0.785400 distance 0.020000
+
+
+ ************************************************************
+distance destination 0.617421 threshold 0.050400
+22 Pose robot 0.635052 0.485345 0.785400 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.059638
+range observations.sensors[13] 0.043327
+range observations.sensors[14] 0.036854
+range observations.sensors[15] 0.035049
+light source angle 1.729387
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.059638
+noised range sensors[13] 0.043327
+noised range sensors[14] 0.036854
+noised range sensors[15] 0.035049
+THRS_SENSOR 0.070000
+Interval 8 THRS_SENSOR 0.070000
+left sensor 0.071858
+right sensor 0.100000
+angle_light 1.729387 quantized destination 1 
+quantized inputs 0
+intensity 2.623238 quantized intensity 0 
+quantized inputs 0
+rotation -0.785400 advance 0.020000
+Send fact (step  21 intensity 2.623238 obs 0 dest 1)
+Answer CLIPS goto 21 1.5708 0.02 0.5
+
+rotation 1.570800 advance 0.020000 status 0.500000
+movement without noise: angle  1.570800 distance 0.020000
+
+
+ ************************************************************
+distance destination 0.597680 threshold 0.050400
+23 Pose robot 0.620910 0.499487 2.356200 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.035572
+range observations.sensors[8] 0.025844
+range observations.sensors[9] 0.021984
+range observations.sensors[10] 0.020908
+range observations.sensors[11] 0.021983
+range observations.sensors[12] 0.025841
+range observations.sensors[13] 0.035565
+range observations.sensors[14] 0.067632
+range observations.sensors[15] 0.100000
+light source angle 0.163872
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.035572
+noised range sensors[8] 0.025844
+noised range sensors[9] 0.021984
+noised range sensors[10] 0.020908
+noised range sensors[11] 0.021983
+noised range sensors[12] 0.025841
+noised range sensors[13] 0.035565
+noised range sensors[14] 0.067632
+noised range sensors[15] 0.100000
+THRS_SENSOR 0.070000
+Interval 8 THRS_SENSOR 0.070000
+left sensor 0.039970
+right sensor 0.091947
+angle_light 0.163872 quantized destination 3 
+quantized inputs 2
+intensity 2.799385 quantized intensity 0 
+quantized inputs 2
+rotation 1.570800 advance 0.020000
+Send fact (step  22 intensity 2.799385 obs 2 dest 3)
+Answer CLIPS goto 22 -0.7854 0.02 0.5
+
+rotation -0.785400 advance 0.020000 status 0.500000
+movement without noise: angle  -0.785400 distance 0.020000
+
+
+ ************************************************************
+distance destination 0.586260 threshold 0.050400
+24 Pose robot 0.620910 0.519488 1.570800 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.029571
+range observations.sensors[11] 0.023467
+range observations.sensors[12] 0.021170
+range observations.sensors[13] 0.021169
+range observations.sensors[14] 0.023465
+range observations.sensors[15] 0.029565
+light source angle 0.977010
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.029571
+noised range sensors[11] 0.023467
+noised range sensors[12] 0.021170
+noised range sensors[13] 0.021169
+noised range sensors[14] 0.023465
+noised range sensors[15] 0.029565
+THRS_SENSOR 0.070000
+Interval 8 THRS_SENSOR 0.070000
+left sensor 0.043551
+right sensor 0.100000
+angle_light 0.977010 quantized destination 3 
+quantized inputs 2
+intensity 2.909507 quantized intensity 0 
+quantized inputs 2
+rotation -0.785400 advance 0.020000
+Send fact (step  23 intensity 2.909507 obs 2 dest 3)
+Answer CLIPS goto 23 -0.7854 0.02 0.5
+
+rotation -0.785400 advance 0.020000 status 0.500000
+movement without noise: angle  -0.785400 distance 0.020000
+
+
+ ************************************************************
+distance destination 0.590395 threshold 0.050400
+25 Pose robot 0.635052 0.533630 0.785400 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.036857
+range observations.sensors[15] 0.035051
+light source angle 1.795672
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.036857
+noised range sensors[15] 0.035051
+THRS_SENSOR 0.070000
+Interval 8 THRS_SENSOR 0.070000
+left sensor 0.083989
+right sensor 0.100000
+angle_light 1.795672 quantized destination 1 
+quantized inputs 0
+intensity 2.868891 quantized intensity 0 
+quantized inputs 0
+rotation -0.785400 advance 0.020000
+Send fact (step  24 intensity 2.868891 obs 0 dest 1)
+Answer CLIPS goto 24 1.5708 0.02 0.5
+
+rotation 1.570800 advance 0.020000 status 0.500000
+movement without noise: angle  1.570800 distance 0.020000
+
+
+ ************************************************************
+distance destination 0.570916 threshold 0.050400
+26 Pose robot 0.620910 0.547772 2.356200 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.020910
+range observations.sensors[11] 0.021985
+range observations.sensors[12] 0.025844
+range observations.sensors[13] 0.035568
+range observations.sensors[14] 0.067639
+range observations.sensors[15] 0.100000
+light source angle 0.232683
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.020910
+noised range sensors[11] 0.021985
+noised range sensors[12] 0.025844
+noised range sensors[13] 0.035568
+noised range sensors[14] 0.067639
+noised range sensors[15] 0.100000
+THRS_SENSOR 0.070000
+Interval 8 THRS_SENSOR 0.070000
+left sensor 0.058993
+right sensor 0.100000
+angle_light 0.232683 quantized destination 3 
+quantized inputs 2
+intensity 3.067997 quantized intensity 0 
+quantized inputs 2
+rotation 1.570800 advance 0.020000
+Send fact (step  25 intensity 3.067997 obs 2 dest 3)
+Answer CLIPS goto 25 -0.7854 0.02 0.5
+
+rotation -0.785400 advance 0.020000 status 0.500000
+movement without noise: angle  -0.785400 distance 0.020000
+
+
+ ************************************************************
+distance destination 0.560675 threshold 0.050400
+27 Pose robot 0.620910 0.567772 1.570800 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.039131
+range observations.sensors[15] 0.029568
+light source angle 1.048448
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.039131
+noised range sensors[15] 0.029568
+THRS_SENSOR 0.070000
+Interval 8 THRS_SENSOR 0.070000
+left sensor 0.083587
+right sensor 0.100000
+angle_light 1.048448 quantized destination 3 
+quantized inputs 0
+intensity 3.181103 quantized intensity 0 
+quantized inputs 0
+rotation -0.785400 advance 0.020000
+Send fact (step  26 intensity 3.181103 obs 0 dest 3)
+Answer CLIPS goto 26 0.7854 0.02 0.5
+
+rotation 0.785400 advance 0.020000 status 0.500000
+movement without noise: angle  0.785400 distance 0.020000
+
+
+ ************************************************************
+distance destination 0.541388 threshold 0.050400
+28 Pose robot 0.606768 0.581914 2.356200 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.054285
+range observations.sensors[13] 0.039438
+range observations.sensors[14] 0.033546
+range observations.sensors[15] 0.100000
+light source angle 0.272654
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.054285
+noised range sensors[13] 0.039438
+noised range sensors[14] 0.033546
+noised range sensors[15] 0.100000
+THRS_SENSOR 0.070000
+Interval 8 THRS_SENSOR 0.070000
+left sensor 0.078409
+right sensor 0.100000
+angle_light 0.272654 quantized destination 3 
+quantized inputs 0
+intensity 3.411795 quantized intensity 0 
+quantized inputs 0
+rotation 0.785400 advance 0.020000
+Send fact (step  27 intensity 3.411795 obs 0 dest 3)
+Answer CLIPS goto 27 0.7854 0.02 0.5
+
+rotation 0.785400 advance 0.020000 status 0.500000
+movement without noise: angle  0.785400 distance 0.020000
+
+
+ ************************************************************
+distance destination 0.524052 threshold 0.050400
+29 Pose robot 0.586768 0.581914 3.141600 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.070284
+range observations.sensors[10] 0.045123
+range observations.sensors[11] 0.035808
+range observations.sensors[12] 0.032303
+range observations.sensors[13] 0.032301
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 5.751716
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.070284
+noised range sensors[10] 0.045123
+noised range sensors[11] 0.035808
+noised range sensors[12] 0.032303
+noised range sensors[13] 0.032301
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+THRS_SENSOR 0.070000
+Interval 8 THRS_SENSOR 0.070000
+left sensor 0.064477
+right sensor 0.100000
+angle_light 5.751716 quantized destination 2 
+quantized inputs 2
+intensity 3.641260 quantized intensity 0 
+quantized inputs 2
+rotation 0.785400 advance 0.020000
+Send fact (step  28 intensity 3.641260 obs 2 dest 2)
+Answer CLIPS goto 28 0.0 -0.02 0.5
+
+rotation 0.000000 advance -0.020000 status 0.500000
+movement without noise: angle  0.000000 distance -0.020000
+
+
+ ************************************************************
+distance destination 0.541388 threshold 0.050400
+30 Pose robot 0.606768 0.581914 3.141600 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.070282
+range observations.sensors[10] 0.045121
+range observations.sensors[11] 0.035807
+range observations.sensors[12] 0.043245
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 5.770439
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.070282
+noised range sensors[10] 0.045121
+noised range sensors[11] 0.035807
+noised range sensors[12] 0.043245
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+THRS_SENSOR 0.070000
+Interval 8 THRS_SENSOR 0.070000
+left sensor 0.074307
+right sensor 0.100000
+angle_light 5.770439 quantized destination 2 
+quantized inputs 0
+intensity 3.411795 quantized intensity 0 
+quantized inputs 0
+rotation 0.000000 advance -0.020000
+Send fact (step  29 intensity 3.411795 obs 0 dest 2)
+Answer CLIPS goto 29 -0.7854 0.02 0.5
+
+rotation -0.785400 advance 0.020000 status 0.500000
+movement without noise: angle  -0.785400 distance 0.020000
+
+
+ ************************************************************
+distance destination 0.522154 threshold 0.050400
+31 Pose robot 0.592625 0.596056 2.356200 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.078349
+range observations.sensors[13] 0.056921
+range observations.sensors[14] 0.048418
+range observations.sensors[15] 0.045763
+light source angle 0.282969
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.078349
+noised range sensors[13] 0.056921
+noised range sensors[14] 0.048418
+noised range sensors[15] 0.045763
+THRS_SENSOR 0.070000
+Interval 8 THRS_SENSOR 0.070000
+left sensor 0.078681
+right sensor 0.100000
+angle_light 0.282969 quantized destination 3 
+quantized inputs 0
+intensity 3.667769 quantized intensity 0 
+quantized inputs 0
+rotation -0.785400 advance 0.020000
+Send fact (step  30 intensity 3.667769 obs 0 dest 3)
+Answer CLIPS goto 30 0.7854 0.02 0.5
+
+rotation 0.785400 advance 0.020000 status 0.500000
+movement without noise: angle  0.785400 distance 0.020000
+
+
+ ************************************************************
+distance destination 0.504718 threshold 0.050400
+32 Pose robot 0.572625 0.596056 3.141600 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.065125
+range observations.sensors[11] 0.051682
+range observations.sensors[12] 0.046622
+range observations.sensors[13] 0.046620
+range observations.sensors[14] 0.051676
+range observations.sensors[15] 0.100000
+light source angle 5.761671
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.065125
+noised range sensors[11] 0.051682
+noised range sensors[12] 0.046622
+noised range sensors[13] 0.046620
+noised range sensors[14] 0.051676
+noised range sensors[15] 0.100000
+THRS_SENSOR 0.070000
+Interval 8 THRS_SENSOR 0.070000
+left sensor 0.070216
+right sensor 0.100000
+angle_light 5.761671 quantized destination 2 
+quantized inputs 0
+intensity 3.925565 quantized intensity 0 
+quantized inputs 0
+rotation 0.785400 advance 0.020000
+Send fact (step  31 intensity 3.925565 obs 0 dest 2)
+Answer CLIPS goto 31 -0.7854 0.02 0.5
+
+rotation -0.785400 advance 0.020000 status 0.500000
+movement without noise: angle  -0.785400 distance 0.020000
+
+
+ ************************************************************
+distance destination 0.485438 threshold 0.050400
+33 Pose robot 0.558483 0.610198 2.356200 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.074405
+range observations.sensors[14] 0.063290
+range observations.sensors[15] 0.059905
+light source angle 0.274632
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.074405
+noised range sensors[14] 0.063290
+noised range sensors[15] 0.059905
+THRS_SENSOR 0.070000
+Interval 8 THRS_SENSOR 0.070000
+left sensor 0.087200
+right sensor 0.100000
+angle_light 0.274632 quantized destination 3 
+quantized inputs 0
+intensity 4.243573 quantized intensity 0 
+quantized inputs 0
+rotation -0.785400 advance 0.020000
+Send fact (step  32 intensity 4.243573 obs 0 dest 3)
+Answer CLIPS goto 32 0.7854 0.02 0.5
+
+rotation 0.785400 advance 0.020000 status 0.500000
+movement without noise: angle  0.785400 distance 0.020000
+
+
+ ************************************************************
+distance destination 0.468093 threshold 0.050400
+34 Pose robot 0.538483 0.610198 3.141600 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.085129
+range observations.sensors[11] 0.067557
+range observations.sensors[12] 0.060942
+range observations.sensors[13] 0.060940
+range observations.sensors[14] 0.067549
+range observations.sensors[15] 0.085111
+light source angle 5.751529
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.085129
+noised range sensors[11] 0.067557
+noised range sensors[12] 0.060942
+noised range sensors[13] 0.060940
+noised range sensors[14] 0.067549
+noised range sensors[15] 0.085111
+THRS_SENSOR 0.070000
+Interval 8 THRS_SENSOR 0.070000
+left sensor 0.078403
+right sensor 0.100000
+angle_light 5.751529 quantized destination 2 
+quantized inputs 0
+intensity 4.563892 quantized intensity 0 
+quantized inputs 0
+rotation 0.785400 advance 0.020000
+Send fact (step  33 intensity 4.563892 obs 0 dest 2)
+Answer CLIPS goto 33 -0.7854 0.02 0.5
+
+rotation -0.785400 advance 0.020000 status 0.500000
+movement without noise: angle  -0.785400 distance 0.020000
+
+
+ ************************************************************
+distance destination 0.448762 threshold 0.050400
+35 Pose robot 0.524341 0.624340 2.356200 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.091889
+range observations.sensors[14] 0.078162
+range observations.sensors[15] 0.074535
+light source angle 0.264931
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.091889
+noised range sensors[14] 0.078162
+noised range sensors[15] 0.074535
+THRS_SENSOR 0.070000
+Interval 8 THRS_SENSOR 0.070000
+left sensor 0.093073
+right sensor 0.100000
+angle_light 0.264931 quantized destination 3 
+quantized inputs 0
+intensity 4.965563 quantized intensity 0 
+quantized inputs 0
+rotation -0.785400 advance 0.020000
+Send fact (step  34 intensity 4.965563 obs 0 dest 3)
+Answer CLIPS goto 34 0.7854 0.02 0.5
+
+rotation 0.785400 advance 0.020000 status 0.500000
+movement without noise: angle  0.785400 distance 0.020000
+
+
+ ************************************************************
+distance destination 0.431525 threshold 0.050400
+36 Pose robot 0.504341 0.624339 3.141600 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.083431
+range observations.sensors[12] 0.075262
+range observations.sensors[13] 0.075259
+range observations.sensors[14] 0.083422
+range observations.sensors[15] 0.100000
+light source angle 5.739667
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.083431
+noised range sensors[12] 0.075262
+noised range sensors[13] 0.075259
+noised range sensors[14] 0.083422
+noised range sensors[15] 0.100000
+THRS_SENSOR 0.070000
+Interval 8 THRS_SENSOR 0.070000
+left sensor 0.089672
+right sensor 0.100000
+angle_light 5.739667 quantized destination 2 
+quantized inputs 0
+intensity 5.370181 quantized intensity 0 
+quantized inputs 0
+rotation 0.785400 advance 0.020000
+Send fact (step  35 intensity 5.370181 obs 0 dest 2)
+Answer CLIPS goto 35 -0.7854 0.02 0.5
+
+rotation -0.785400 advance 0.020000 status 0.500000
+movement without noise: angle  -0.785400 distance 0.020000
+
+
+ ************************************************************
+distance destination 0.412135 threshold 0.050400
+37 Pose robot 0.490199 0.638481 2.356200 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.093034
+range observations.sensors[15] 0.088677
+light source angle 0.253505
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.093034
+noised range sensors[15] 0.088677
+THRS_SENSOR 0.070000
+Interval 8 THRS_SENSOR 0.070000
+left sensor 0.097714
+right sensor 0.100000
+angle_light 0.253505 quantized destination 3 
+quantized inputs 0
+intensity 5.887376 quantized intensity 0 
+quantized inputs 0
+rotation -0.785400 advance 0.020000
+Send fact (step  36 intensity 5.887376 obs 0 dest 3)
+Answer CLIPS goto 36 0.7854 0.02 0.5
+
+rotation 0.785400 advance 0.020000 status 0.500000
+movement without noise: angle  0.785400 distance 0.020000
+
+
+ ************************************************************
+distance destination 0.395028 threshold 0.050400
+38 Pose robot 0.470199 0.638481 3.141600 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.099305
+range observations.sensors[12] 0.089582
+range observations.sensors[13] 0.089579
+range observations.sensors[14] 0.099295
+range observations.sensors[15] 0.100000
+light source angle 5.725611
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.099305
+noised range sensors[12] 0.089582
+noised range sensors[13] 0.089579
+noised range sensors[14] 0.099295
+noised range sensors[15] 0.100000
+THRS_SENSOR 0.070000
+Interval 8 THRS_SENSOR 0.070000
+left sensor 0.097220
+right sensor 0.100000
+angle_light 5.725611 quantized destination 2 
+quantized inputs 0
+intensity 6.408324 quantized intensity 0 
+quantized inputs 0
+rotation 0.785400 advance 0.020000
+Send fact (step  37 intensity 6.408324 obs 0 dest 2)
+Answer CLIPS goto 37 -0.7854 0.02 0.5
+
+rotation -0.785400 advance 0.020000 status 0.500000
+movement without noise: angle  -0.785400 distance 0.020000
+
+
+ ************************************************************
+distance destination 0.375572 threshold 0.050400
+39 Pose robot 0.456057 0.652623 2.356200 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.239853
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+THRS_SENSOR 0.070000
+Interval 8 THRS_SENSOR 0.070000
+left sensor 0.100000
+right sensor 0.100000
+angle_light 0.239853 quantized destination 3 
+quantized inputs 0
+intensity 7.089472 quantized intensity 0 
+quantized inputs 0
+rotation -0.785400 advance 0.020000
+Send fact (step  38 intensity 7.089472 obs 0 dest 3)
+Answer CLIPS goto 38 0.7854 0.02 0.5
+
+rotation 0.785400 advance 0.020000 status 0.500000
+movement without noise: angle  0.785400 distance 0.020000
+
+
+ ************************************************************
+distance destination 0.358625 threshold 0.050400
+40 Pose robot 0.436057 0.652623 3.141600 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 5.708697
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+THRS_SENSOR 0.070000
+Interval 8 THRS_SENSOR 0.070000
+left sensor 0.100000
+right sensor 0.100000
+angle_light 5.708697 quantized destination 2 
+quantized inputs 0
+intensity 7.775322 quantized intensity 0 
+quantized inputs 0
+rotation 0.785400 advance 0.020000
+Send fact (step  39 intensity 7.775322 obs 0 dest 2)
+Answer CLIPS goto 39 -0.7854 0.02 0.5
+
+rotation -0.785400 advance 0.020000 status 0.500000
+movement without noise: angle  -0.785400 distance 0.020000
+
+
+ ************************************************************
+distance destination 0.339094 threshold 0.050400
+41 Pose robot 0.421914 0.666765 2.356200 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.223259
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+THRS_SENSOR 0.070000
+Interval 8 THRS_SENSOR 0.070000
+left sensor 0.100000
+right sensor 0.100000
+angle_light 0.223259 quantized destination 3 
+quantized inputs 0
+intensity 8.696793 quantized intensity 0 
+quantized inputs 0
+rotation -0.785400 advance 0.020000
+Send fact (step  40 intensity 8.696793 obs 0 dest 3)
+Answer CLIPS goto 40 0.7854 0.02 0.5
+
+rotation 0.785400 advance 0.020000 status 0.500000
+movement without noise: angle  0.785400 distance 0.020000
+
+
+ ************************************************************
+distance destination 0.322348 threshold 0.050400
+42 Pose robot 0.401914 0.666765 3.141600 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 5.687969
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+THRS_SENSOR 0.070000
+Interval 8 THRS_SENSOR 0.070000
+left sensor 0.100000
+right sensor 0.100000
+angle_light 5.687969 quantized destination 2 
+quantized inputs 0
+intensity 9.623866 quantized intensity 0 
+quantized inputs 0
+rotation 0.785400 advance 0.020000
+Send fact (step  41 intensity 9.623866 obs 0 dest 2)
+Answer CLIPS goto 41 -0.7854 0.02 0.5
+
+rotation -0.785400 advance 0.020000 status 0.500000
+movement without noise: angle  -0.785400 distance 0.020000
+
+
+ ************************************************************
+distance destination 0.302732 threshold 0.050400
+43 Pose robot 0.387772 0.680907 2.356200 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.202673
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+THRS_SENSOR 0.070000
+Interval 8 THRS_SENSOR 0.070000
+left sensor 0.100000
+right sensor 0.100000
+angle_light 0.202673 quantized destination 3 
+quantized inputs 0
+intensity 10.911443 quantized intensity 0 
+quantized inputs 0
+rotation -0.785400 advance 0.020000
+Send fact (step  42 intensity 10.911443 obs 0 dest 3)
+Answer CLIPS goto 42 0.7854 0.02 0.5
+
+rotation 0.785400 advance 0.020000 status 0.500000
+movement without noise: angle  0.785400 distance 0.020000
+
+
+ ************************************************************
+distance destination 0.286245 threshold 0.050400
+44 Pose robot 0.367772 0.680907 3.141600 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 5.661999
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+THRS_SENSOR 0.070000
+Interval 8 THRS_SENSOR 0.070000
+left sensor 0.100000
+right sensor 0.100000
+angle_light 5.661999 quantized destination 2 
+quantized inputs 0
+intensity 12.204637 quantized intensity 0 
+quantized inputs 0
+rotation 0.785400 advance 0.020000
+Send fact (step  43 intensity 12.204637 obs 0 dest 2)
+Answer CLIPS goto 43 -0.7854 0.02 0.5
+
+rotation -0.785400 advance 0.020000 status 0.500000
+movement without noise: angle  -0.785400 distance 0.020000
+
+
+ ************************************************************
+distance destination 0.266534 threshold 0.050400
+45 Pose robot 0.353630 0.695049 2.356200 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.176481
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+THRS_SENSOR 0.070000
+Interval 8 THRS_SENSOR 0.070000
+left sensor 0.100000
+right sensor 0.100000
+angle_light 0.176481 quantized destination 3 
+quantized inputs 0
+intensity 14.076515 quantized intensity 0 
+quantized inputs 0
+rotation -0.785400 advance 0.020000
+Send fact (step  44 intensity 14.076515 obs 0 dest 3)
+Answer CLIPS goto 44 0.7854 0.02 0.5
+
+rotation 0.785400 advance 0.020000 status 0.500000
+movement without noise: angle  0.785400 distance 0.020000
+
+
+ ************************************************************
+distance destination 0.250390 threshold 0.050400
+46 Pose robot 0.333630 0.695049 3.141600 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 5.628563
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+THRS_SENSOR 0.070000
+Interval 8 THRS_SENSOR 0.070000
+left sensor 0.100000
+right sensor 0.100000
+angle_light 5.628563 quantized destination 2 
+quantized inputs 0
+intensity 15.950198 quantized intensity 0 
+quantized inputs 0
+rotation 0.785400 advance 0.020000
+Send fact (step  45 intensity 15.950198 obs 0 dest 2)
+Answer CLIPS goto 45 -0.7854 0.02 0.5
+
+rotation -0.785400 advance 0.020000 status 0.500000
+movement without noise: angle  -0.785400 distance 0.020000
+
+
+ ************************************************************
+distance destination 0.230576 threshold 0.050400
+47 Pose robot 0.319488 0.709191 2.356200 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.142089
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+THRS_SENSOR 0.070000
+Interval 8 THRS_SENSOR 0.070000
+left sensor 0.100000
+right sensor 0.100000
+angle_light 0.142089 quantized destination 3 
+quantized inputs 0
+intensity 18.809341 quantized intensity 0 
+quantized inputs 0
+rotation -0.785400 advance 0.020000
+Send fact (step  46 intensity 18.809341 obs 0 dest 3)
+Answer CLIPS goto 46 0.7854 0.02 0.5
+
+rotation 0.785400 advance 0.020000 status 0.500000
+movement without noise: angle  0.785400 distance 0.020000
+
+
+ ************************************************************
+distance destination 0.214908 threshold 0.050400
+48 Pose robot 0.299488 0.709191 3.141600 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 5.584022
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+THRS_SENSOR 0.070000
+Interval 8 THRS_SENSOR 0.070000
+left sensor 0.100000
+right sensor 0.100000
+angle_light 5.584022 quantized destination 2 
+quantized inputs 0
+intensity 21.651768 quantized intensity 0 
+quantized inputs 0
+rotation 0.785400 advance 0.020000
+Send fact (step  47 intensity 21.651768 obs 0 dest 2)
+Answer CLIPS goto 47 -0.7854 0.02 0.5
+
+rotation -0.785400 advance 0.020000 status 0.500000
+movement without noise: angle  -0.785400 distance 0.020000
+
+
+ ************************************************************
+distance destination 0.194990 threshold 0.050400
+49 Pose robot 0.285345 0.723333 2.356200 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.095071
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+THRS_SENSOR 0.070000
+Interval 8 THRS_SENSOR 0.070000
+left sensor 0.100000
+right sensor 0.100000
+angle_light 0.095071 quantized destination 3 
+quantized inputs 0
+intensity 26.301104 quantized intensity 0 
+quantized inputs 0
+rotation -0.785400 advance 0.020000
+Send fact (step  48 intensity 26.301104 obs 0 dest 3)
+Answer CLIPS goto 48 0.7854 0.02 0.5
+
+rotation 0.785400 advance 0.020000 status 0.500000
+movement without noise: angle  0.785400 distance 0.020000
+
+
+ ************************************************************
+distance destination 0.180021 threshold 0.050400
+50 Pose robot 0.265345 0.723333 3.141600 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 5.522051
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+THRS_SENSOR 0.070000
+Interval 8 THRS_SENSOR 0.070000
+left sensor 0.100000
+right sensor 0.100000
+angle_light 5.522051 quantized destination 2 
+quantized inputs 0
+intensity 30.857122 quantized intensity 0 
+quantized inputs 0
+rotation 0.785400 advance 0.020000
+Send fact (step  49 intensity 30.857122 obs 0 dest 2)
+Answer CLIPS goto 49 -0.7854 0.02 0.5
+
+rotation -0.785400 advance 0.020000 status 0.500000
+movement without noise: angle  -0.785400 distance 0.020000
+
+
+ ************************************************************
+distance destination 0.160027 threshold 0.050400
+51 Pose robot 0.251203 0.737475 2.356200 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.027297
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+THRS_SENSOR 0.070000
+Interval 8 THRS_SENSOR 0.070000
+left sensor 0.100000
+right sensor 0.100000
+angle_light 0.027297 quantized destination 3 
+quantized inputs 0
+intensity 39.049198 quantized intensity 0 
+quantized inputs 0
+rotation -0.785400 advance 0.020000
+Send fact (step  50 intensity 39.049198 obs 0 dest 3)
+Answer CLIPS goto 50 0.7854 0.02 0.5
+
+rotation 0.785400 advance 0.020000 status 0.500000
+movement without noise: angle  0.785400 distance 0.020000
+
+
+ ************************************************************
+distance destination 0.146153 threshold 0.050400
+52 Pose robot 0.231203 0.737475 3.141600 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 5.430858
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+THRS_SENSOR 0.070000
+Interval 8 THRS_SENSOR 0.070000
+left sensor 0.100000
+right sensor 0.100000
+angle_light 5.430858 quantized destination 2 
+quantized inputs 0
+intensity 46.815128 quantized intensity 0 
+quantized inputs 0
+rotation 0.785400 advance 0.020000
+Send fact (step  51 intensity 46.815128 obs 0 dest 2)
+Answer CLIPS goto 51 -0.7854 0.02 0.5
+
+rotation -0.785400 advance 0.020000 status 0.500000
+movement without noise: angle  -0.785400 distance 0.020000
+
+
+ ************************************************************
+distance destination 0.126205 threshold 0.050400
+53 Pose robot 0.217061 0.751617 2.356200 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 6.205659
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+THRS_SENSOR 0.070000
+Interval 8 THRS_SENSOR 0.070000
+left sensor 0.100000
+right sensor 0.100000
+angle_light 6.205659 quantized destination 2 
+quantized inputs 0
+intensity 62.784100 quantized intensity 0 
+quantized inputs 0
+rotation -0.785400 advance 0.020000
+Send fact (step  52 intensity 62.784100 obs 0 dest 2)
+Answer CLIPS goto 52 -0.7854 0.02 0.5
+
+rotation -0.785400 advance 0.020000 status 0.500000
+movement without noise: angle  -0.785400 distance 0.020000
+
+
+ ************************************************************
+distance destination 0.111769 threshold 0.050400
+54 Pose robot 0.217061 0.771617 1.570800 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.824488
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+THRS_SENSOR 0.070000
+Interval 8 THRS_SENSOR 0.070000
+left sensor 0.100000
+right sensor 0.100000
+angle_light 0.824488 quantized destination 3 
+quantized inputs 0
+intensity 80.049530 quantized intensity 0 
+quantized inputs 0
+rotation -0.785400 advance 0.020000
+Send fact (step  53 intensity 80.049530 obs 0 dest 3)
+Answer CLIPS goto 53 0.7854 0.02 0.5
+
+rotation 0.785400 advance 0.020000 status 0.500000
+movement without noise: angle  0.785400 distance 0.020000
+
+
+ ************************************************************
+distance destination 0.091787 threshold 0.050400
+55 Pose robot 0.202919 0.785759 2.356200 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 0.047603
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+THRS_SENSOR 0.070000
+Interval 8 THRS_SENSOR 0.070000
+left sensor 0.100000
+right sensor 0.100000
+angle_light 0.047603 quantized destination 3 
+quantized inputs 0
+intensity 118.695320 quantized intensity 0 
+quantized inputs 0
+rotation 0.785400 advance 0.020000
+Send fact (step  54 intensity 118.695320 obs 0 dest 3)
+Answer CLIPS goto 54 0.7854 0.02 0.5
+
+rotation 0.785400 advance 0.020000 status 0.500000
+movement without noise: angle  0.785400 distance 0.020000
+
+
+ ************************************************************
+distance destination 0.078155 threshold 0.050400
+56 Pose robot 0.182919 0.785759 3.141600 
+range observations.sensors[0] 0.100000
+range observations.sensors[1] 0.100000
+range observations.sensors[2] 0.100000
+range observations.sensors[3] 0.100000
+range observations.sensors[4] 0.100000
+range observations.sensors[5] 0.100000
+range observations.sensors[6] 0.100000
+range observations.sensors[7] 0.100000
+range observations.sensors[8] 0.100000
+range observations.sensors[9] 0.100000
+range observations.sensors[10] 0.100000
+range observations.sensors[11] 0.100000
+range observations.sensors[12] 0.100000
+range observations.sensors[13] 0.100000
+range observations.sensors[14] 0.100000
+range observations.sensors[15] 0.100000
+light source angle 5.372393
+noised range sensors[0] 0.100000
+noised range sensors[1] 0.100000
+noised range sensors[2] 0.100000
+noised range sensors[3] 0.100000
+noised range sensors[4] 0.100000
+noised range sensors[5] 0.100000
+noised range sensors[6] 0.100000
+noised range sensors[7] 0.100000
+noised range sensors[8] 0.100000
+noised range sensors[9] 0.100000
+noised range sensors[10] 0.100000
+noised range sensors[11] 0.100000
+noised range sensors[12] 0.100000
+noised range sensors[13] 0.100000
+noised range sensors[14] 0.100000
+noised range sensors[15] 0.100000
+THRS_SENSOR 0.070000
+Interval 8 THRS_SENSOR 0.070000
+left sensor 0.100000
+right sensor 0.100000
+angle_light 5.372393 quantized destination 2 
+quantized inputs 0
+intensity 163.714478 quantized intensity 0 
+quantized inputs 0
+rotation 0.785400 advance 0.020000
+Send fact (step  55 intensity 163.714478 obs 0 dest 2)
+Answer CLIPS goto 55 -0.7854 0.02 1.0
+
+rotation -0.785400 advance 0.020000 status 1.000000
+
+ **************** Reached light source ******************************
+movement without noise: angle  -0.785400 distance 0.020000
