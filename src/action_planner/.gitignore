@@ -4,13 +4,11 @@
 !.gitignore
 !.gitattributes
 !CMakeLists.txt
-!readme
 !readme.MD
-!README
 # And these filetypes
-!*.c
-!*.cpp
 !*.h
 !*.hpp
+!*.c
+!*.cpp
 # Even if they are in subdirectories
 !**/
