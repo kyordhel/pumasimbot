@@ -10,9 +10,10 @@
 # And these filetypes
 !*.dat
 !*.clp
-!*.wrl
 !*.ord
+!*.raw
 !*.top
 !*.txt
+!*.wrl
 # Even if they are in subdirectories
 !**/
