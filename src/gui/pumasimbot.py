@@ -14,6 +14,7 @@ import os
 import numpy as np
 from initial_behaviors import *
 import time
+import whereami
  
 #set softtabstop=0 noexpandtab 
 
@@ -79,7 +80,6 @@ original_value = 0.0
 planner = tk.Tk()
 planner.wm_title('PUMAS ROBOT SIMULATOR')
 C = tk.Canvas(planner, bg="green", height=DIM_CANVAS_X, width=DIM_CANVAS_Y)
-
 
 class PLANNER(object):
    
@@ -449,13 +449,11 @@ class PLANNER(object):
 		show_help()
 
 		def Start_CLIPS(): 
-			if flg_start_clips == 1:
-				#command = "~/tcpclips60-master/start.sh"
-				#command = "~/develop/tcpclips60/start.sh"
-				command = "../../start_planning.sh"
-				print ("Start CLIPS ",command)
-				status = os.system(command)
-				print("status ",status)
+			if flg_start_clips != 1: return
+			command = f'cd "{whereami.PUMASIMBOT_ROOT}" && ./start_planning.sh'
+			print ('Starting CLIPS...', command, end='')
+			status = os.system(command)
+			print(' Status', status)
 
 
 		buttonClips = Button(topLevelWindow ,width = 20, text = "CLIPS", bg = 'green', activebackground = 'green',command = Start_CLIPS )
@@ -1339,14 +1337,13 @@ class PLANNER(object):
 			if int(selection_value) == 8 or int(selection_value) == 9:
 				print ("Start CLIPS ",flg_start_clips)
 				if flg_start_clips == 1:
-					#command = "~/tcpclips60-master/start.sh"
-					#command = "~/develop/tcpclips60/start.sh"
-					command = "../../start_planning.sh"
-					print ("Start CLIPS ",command)
+					command = f'cd "{whereami.PUMASIMBOT_ROOT}" && ./start_planning.sh'
+					print ('Starting CLIPS...', command, end='')
 					status = os.system(command)
-					print("status ",status)
+					print(' Status', status)
 					flg_start_clips= 0
 					time.sleep(1.00)
+
 				advance_robot.delete(0, END)
 				advance_robot.insert(0,'0.020')
 			else:
