@@ -13,9 +13,6 @@
 ************************************************/
 
 
-#include "reply.h"
-#include "request.h"
-#include "clipsclient.h"
 #include <chrono>
 #include <iostream>
 #include <vector>
@@ -26,6 +23,10 @@
 #include <thread>
 #include <mutex>
 #include <condition_variable>
+
+#include "clipsclient/reply.h"
+#include "clipsclient/request.h"
+#include "clipsclient/clipsclient.h"
 
 
 /* ** ********************************************************

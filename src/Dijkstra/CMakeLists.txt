@@ -3,7 +3,7 @@ project(Dijkstra)
 
 ## Compile as C++14
 add_compile_options(-std=c++14)
-find_package(Boost REQUIRED COMPONENTS thread filesystem)
+find_package(Boost COMPONENTS thread filesystem REQUIRED)
 
 set(EXECUTABLE_OUTPUT_PATH "${ROOT_BIN_DIR}/Dijkstra")
 

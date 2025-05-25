@@ -13,6 +13,7 @@ set(ROOT_DATA_DIR ${CMAKE_SOURCE_DIR}/data)
 
 include_directories(
   ${CMAKE_SOURCE_DIR}/src
+  ${TCP_CLIPS60_PATH}/include
 )
 
 add_subdirectory(src/action_planner)
