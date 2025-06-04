@@ -1,9 +1,9 @@
 cmake_minimum_required(VERSION 3.14)
 project(gui)
 
-ADD_CUSTOM_TARGET(guibindir ALL
-  COMMAND ${CMAKE_COMMAND} -E make_directory
-    ${ROOT_BIN_DIR}/gui)
+file(MAKE_DIRECTORY
+  ${ROOT_BIN_DIR}/gui
+)
 
 ADD_CUSTOM_TARGET(pumasimbot ALL
   COMMAND ${CMAKE_COMMAND} -E create_symlink
