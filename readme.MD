@@ -29,7 +29,7 @@ that will be automagically downloaded by CMake, although you can override this b
 ## Prerrequisites' installation under ubuntu/debian
 ```bash
 sudo apt install build-essential cmake libboost-all-dev \
-libncurses-dev python3 python3-tk
+libncurses-dev python3 python3-tk python3-numpy
 ```
 
 # Build
