@@ -16,6 +16,7 @@ include_directories(
   ${TCP_CLIPS60_PATH}/include
 )
 
+add_subdirectory(src/expert_system)
 add_subdirectory(src/action_planner)
 add_subdirectory(src/motion_planner)
 add_subdirectory(src/Dijkstra)
