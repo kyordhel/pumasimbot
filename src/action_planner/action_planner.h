@@ -46,7 +46,7 @@ int start_clips_node_action_planner(){
  connect("127.0.0.1", 5000);
 
  //it sets the clips path 
- reqSetPath("../../data/ViRBot_Planning_Sockets/");
+ reqSetPath("ViRBot_Planning_Sockets/");
  //reqSetPath("/home/savage/pumasimbot/action_planner/ViRBot_Planning_Sockets");
  //reqSetPath("~/pumasimbot/action_planner/ViRBot_Planning_Sockets");
  //reqSetPath("");

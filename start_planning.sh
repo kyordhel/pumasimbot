@@ -14,7 +14,7 @@ fi
 
 
 #Script to start CLIPS
-xterm -geometry 80x27+100+100 -hold -e "pwd && cd bin/tcpCLIPS60 && ./clipsserver" &
+xterm -geometry 80x27+100+100 -hold -e "pwd && cd bin/tcpCLIPS60 && ./clipsserver -d expert_system" &
 sleep 0.3
-xterm -geometry 160x27+100+480 -hold -e "pwd && cd bin/tcpCLIPS60 && ./clipscontrol" &
+xterm -geometry 160x27+100+480 -hold -e "pwd && cd bin/tcpCLIPS60 && ./clipscontrol -d expert_system" &
 sleep 0.1
