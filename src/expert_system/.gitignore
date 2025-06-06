@@ -12,5 +12,6 @@
 # And these filetypes
 !*.clp
 !*.dat
+!*.txt
 # Even if they are in subdirectories
 !**/
