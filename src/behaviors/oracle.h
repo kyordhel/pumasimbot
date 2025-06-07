@@ -176,7 +176,8 @@ int start_clips(char *clips_file){
 
         clientPtr = ClipsClient::create();
         connect("127.0.0.1", 5000);
-        reqSetPath("../../../../pumasimbot/behaviors/");
+        //reqSetPath("../../../../pumasimbot/behaviors/");
+        reqSetPath("src/expert_system");
         reqLoadFile(clips_file);
         reqReset();
         reqRun();
