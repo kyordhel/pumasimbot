@@ -32,15 +32,14 @@
 
 
 //It gets the best nodes using the Dijkstra algorithm 
-float Dijkstra(Inputs inputs)
-{
+float Dijkstra(Inputs inputs){
 
  float rx,ry,lx,ly;
  step steps[200];
- char world_file[250];
+ char world_file[512];
  float distance;
 
- sprintf(world_file,"%s%s",inputs.path,inputs.environment);
+ sprintf(world_file,"%s%s", inputs.path, inputs.environment);
 
  rx=inputs.xo;
  ry=inputs.yo;

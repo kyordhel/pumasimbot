@@ -8,6 +8,7 @@
 *                               	                                     *
 *                               FI-UNAM 2015                                 *
 *****************************************************************************/
+#pragma once
 
 #include <stdio.h>
 #include <math.h>
@@ -693,7 +694,7 @@ void select_angles(int num, float *Angles, float *angle_sensors, int num_sensors
 
 
 // it generates simulated sensor values
-void get_sensor_values(coord coord_robot,float start_angle,float range, Raw *sensor_vector, int num, float largest_value){
+void get_sensor_values_virtual(coord coord_robot,float start_angle,float range, Raw *sensor_vector, int num, float largest_value){
 
  int k;
  float distance;

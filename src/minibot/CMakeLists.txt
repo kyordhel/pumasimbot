@@ -1,21 +1,19 @@
 cmake_minimum_required(VERSION 3.14)
-project(motion_planner)
+project(libminibot)
 
 ## Compile as C++14
 add_compile_options(-std=c++14)
 find_package(Boost COMPONENTS thread filesystem REQUIRED)
 
-set(EXECUTABLE_OUTPUT_PATH "${ROOT_BIN_DIR}/motion_planner")
+set(EXECUTABLE_OUTPUT_PATH "${ROOT_BIN_DIR}/minibot")
 
-add_executable(GoTo_State_Machine
-  GoTo_State_Machine.cpp
+add_library(minibot STATIC
+  minibot.cpp
 )
 
 # Linker dependencies
-target_link_libraries(GoTo_State_Machine
-  minibot
+target_link_libraries(minibot
   minibot-client
-  clipsclient
   Boost::thread
   Boost::filesystem
   ${BOOST_LIBRARIES}

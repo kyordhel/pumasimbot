@@ -54,6 +54,7 @@ float THRS_SENSOR = 1.00;
 #include "utilities/structures.h"
 #include "simulator/simulation.h"
 #include "utilities/utilities.h"
+#include "utilities/virbot.h"
 #include "utilities/random.h"
 #include "utilities/inputs.h"
 #include "state_machines/reactive_behavior.h"
@@ -228,7 +229,8 @@ int go_to(Inputs inputs)
 	// ********************************** SENSING  *****************************************************************
 
 
-	// it gets laser range data from the simulator or the real robot, this function is in ../simulator/simulation.h
+	// it gets laser range data from the simulator or the real robot, this function is in
+	// ../utilities/virbot.h and then points to ../simulator/simulation.h
         get_sensor_values(coord_robot,inputs.theta_sensor,inputs.range_sensor,&observations,inputs.num_sensors,largest_value);
 
 #ifdef DEBUG
@@ -236,7 +238,8 @@ int go_to(Inputs inputs)
        		 printf("range observations.sensors[%d] %f\n",i,observations.sensors[i]);
    	}
 #endif
-	// it gets the intensity a angle of a light source from the simulator or the real robot, this function is in ../utilities/utilities.h
+	// it gets the intensity a angle of a light source from the simulator or the real robot, this function is in
+	// ../utilities/virbot.h and then points to ../simulator/utilities.h
 	get_intensity_angle(coord_robot,coord_dest,&intensity,&angle_light);
 
 

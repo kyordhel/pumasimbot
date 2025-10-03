@@ -7,6 +7,7 @@
 *                               FI-UNAM 2015                                 	*
 ********************************************************************************/
 
+#pragma once
 #define NUM_MAX_SENSORS 512
 #define NUM_MAX_CENTROIDS 1024
 //#define TYPE_0 2
@@ -101,7 +102,7 @@ float get_angle(float ang,float c,float d,float X,float Y){
 
 
 
-void get_intensity_angle(coord coord_robot,coord coord_destination, float *intensity, float *light_angle){
+void get_intensity_angle_virtual(coord coord_robot,coord coord_destination, float *intensity, float *light_angle){
 
  coord attraction_force;
  float mag;
@@ -422,101 +423,6 @@ int shs_distance_obstacle(float x1, float y1, float x2, float y2,float dist_adva
 
 }
 
-
-
-// it will move the robot the desire angle and distance
-int  mvrobot(FILE *fpw,AdvanceAngle DistTheta,coord *coord_robot ){
- int flg=0;
- int flg_unk=0;
- float new_xmv,new_ymv,new_thetamv;
- float xc,yc;
- float speed;
- coord new_coord;
- float xmv,ymv,thetamv;
- float distance, angle1;
- int dummy;
- float cnt=3.0;
- int indx=0;
- int flag = 0;
- int flag_unk = 1;
-
-
- xmv=coord_robot->xc;
- ymv=coord_robot->yc;
- thetamv=coord_robot->anglec;
-
- angle1 = DistTheta.angle;
- distance = DistTheta.distance;
-
-//#ifdef DEBUG
- //printf("before x:%f, y:%f,  rad:%f\n",coord_robot->xc,coord_robot->yc,coord_robot->anglec);
- //printf("Distance %f before angle1 %f\n",distance,angle1);
-//#endif
-
-
- new_thetamv = thetamv + angle1;
-
- //if(distance > 0.){
- 	new_xmv = xmv + (float) distance*(float)cos((float) (new_thetamv));
- 	new_ymv = ymv + (float) distance*(float)sin((float) (new_thetamv));
- //}
- //else{
- 	//new_xmv = xmv - (float) cnt*distance*(float)cos((float) (new_thetamv));
- 	//new_ymv = ymv - (float) cnt*distance*(float)sin((float) (new_thetamv));
-//}
-
-// #ifdef DEBUG
-// printf("new_thetamv %f\n",new_thetamv);
-// printf("new_xmv %f new_ymv %f\n",new_xmv,new_ymv);
-//#endif
-
- // it checks if the robot new position is inside an obstacle
- //flg = shs_distance_obstacle(xmv,ymv,new_xmv,new_ymv,.5,&indx);
- flg = shs_distance_obstacle(xmv,ymv,new_xmv,new_ymv,cnt*distance,&indx,0);
- if(num_polygons_unk > 0) 
-	flg_unk = shs_distance_obstacle(xmv,ymv,new_xmv,new_ymv,cnt*distance,&indx,1);
-
-//#ifdef DEBUG
- //printf("check inside flg %d x:%.3f, y:%.3f,  rad:%.3f polygon  %d polygon name %s\n",flg,new_xmv,new_ymv,new_thetamv,indx,polygons_wrl[indx].name);
-//#endif
-
- //flg = check_inside_polygon(new_xmv,new_ymv,polygons_wrl,indx);
-
- flag = inside_polygon(num_polygons_wrl,polygons_wrl,new_xmv,new_ymv,&indx);
- //printf("num_polygons_unk %d\n",num_polygons_unk);
- if(num_polygons_unk > 0) 
- 	flag_unk = inside_polygon(num_polygons_unk+1,polygons_unk,new_xmv,new_ymv,&indx);
-
- if(angle1 > 5.75f) angle1=- (angle1 - 5.75f) ;
- if(new_thetamv > 6.2832) new_thetamv = new_thetamv - (float) 6.2832;
- else if(new_thetamv < -0.0) new_thetamv = new_thetamv + (float) 6.2832;
-
- new_xmv = xmv + (float) distance*(float)cos((float) (new_thetamv));
- new_ymv = ymv + (float) distance*(float)sin((float) (new_thetamv));
-
- //printf("flag %d flg %d flag_unk %d flg_unk %d\n",flag,flg,flag_unk,flg_unk);
- if((flag==1 && flg == 0) && ( flag_unk==1 && flg_unk == 0)){
- 	coord_robot->xc=new_xmv;
- 	coord_robot->yc=new_ymv;
- 	coord_robot->anglec=new_thetamv;
- }
- else{
-#ifdef DEBUG
- 	printf("robot inside polygon %d x:%.3f, y:%.3f,  rad:%.3f polygon  %d polygon name %s\n",flag,new_xmv,new_ymv,new_thetamv,indx,polygons_wrl[indx].name);
-        printf("The robot remains with the previous position\n");
-#endif
-        //printf("The robot remains with the previous position\n");
-	dummy=0;
-	fprintf(fpw,"( collision obstacle )\n");
- }
-
-//#ifdef DEBUG
- //printf("after x:%f, y:%f,  rad:%f\n",coord_robot->xc,coord_robot->yc,coord_robot->anglec);
-//#endif
-
- return flg;
-
-}
 
 
 float distance(coord vector,coord vector1){

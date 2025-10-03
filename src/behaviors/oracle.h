@@ -11,9 +11,10 @@
 *                                              *
 *                                              *
 ************************************************/
-
+#pragma once
 
 #include <chrono>
+#include <cstdio>
 #include <iostream>
 #include <vector>
 #include <ctime>
@@ -48,7 +49,7 @@ static inline void reqLoadFile(const std::string& file);
 static inline void reqSetPath(const std::string& path);
 static inline void reqReset();
 static inline void reqClear();
-static inline void reqRun();
+static inline void reqRun(int n=-1);
 static inline void reqAssert(const std::string& fact);
 static inline void reqRetract(const std::string& fact);
 void cleanup();
@@ -100,8 +101,8 @@ void reqClear(){
 /**
  * Requests CLIPS to run the KDB engine
  */
-void reqRun(){
-        clientPtr->run(-1);
+void reqRun(int n){
+        clientPtr->run(n);
 }
 
 
