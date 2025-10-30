@@ -35,33 +35,35 @@
 // *****************************************************************************
 
 typedef struct _environment{
-        int flag;
-        char environment[100];
+    int flag;
+    char environment[100];
 } Environment;
 
 
 typedef struct _raw{
-        int flag;
-         int region;
-         float x,y,theta[MAX_NUM_SENSORS],sensors[MAX_NUM_SENSORS];
+    int flag;
+    int region;
+    float x,y;
+    float theta[MAX_NUM_SENSORS];
+    float sensors[MAX_NUM_SENSORS];
 } Raw;
 
 typedef struct Vertex_ {
-        float x;
-        float y;
+    float x;
+    float y;
 } Vertex;
 
 typedef struct Line_ {
-        float m;
-        float b;
+    float m;
+    float b;
 } Line;
 
 typedef struct Polygon_ {
-        char    name[STRSIZ];
-        char    type[STRSIZ];
-        int     num_vertex;
-        Vertex  vertex[NUM_MAX_VERTEX];
-        Line    line[NUM_MAX_VERTEX];
+    char    name[STRSIZ];
+    char    type[STRSIZ];
+    int     num_vertex;
+    Vertex  vertex[NUM_MAX_VERTEX];
+    Line    line[NUM_MAX_VERTEX];
 } Polygon;
 
 

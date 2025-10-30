@@ -16,9 +16,9 @@ if (DEFINED ENV{MINIBOT_TCP_API_FETCH_FROM_GIT_PATH} AND (NOT MINIBOT_TCP_API_FE
     message("Using MINIBOT_TCP_API_FETCH_FROM_GIT_PATH from environment ('${MINIBOT_TCP_API_FETCH_FROM_GIT_PATH}')")
 endif ()
 
-set(MINIBOT_TCP_API_PATH "${MINIBOT_TCP_API_PATH}" CACHE PATH "Path to the tcpMinibot API")
-set(MINIBOT_TCP_API_FETCH_FROM_GIT "${MINIBOT_TCP_API_FETCH_FROM_GIT}" CACHE BOOL "Set to ON to download the tcpMinibot API from git if unlocatable")
-set(MINIBOT_TCP_API_FETCH_FROM_GIT_PATH "${MINIBOT_TCP_API_FETCH_FROM_GIT_PATH}" CACHE FILEPATH "location to download tcpMinibot API")
+set(MINIBOT_TCP_API_PATH "${MINIBOT_TCP_API_PATH}" CACHE PATH "Path to the Minibot TCP API")
+set(MINIBOT_TCP_API_FETCH_FROM_GIT "${MINIBOT_TCP_API_FETCH_FROM_GIT}" CACHE BOOL "Set to ON to download the Minibot TCP API from git if unlocatable")
+set(MINIBOT_TCP_API_FETCH_FROM_GIT_PATH "${MINIBOT_TCP_API_FETCH_FROM_GIT_PATH}" CACHE FILEPATH "location to download Minibot TCP API")
 
 if (NOT MINIBOT_TCP_API_PATH)
     if (MINIBOT_TCP_API_FETCH_FROM_GIT)
@@ -42,7 +42,7 @@ if (NOT MINIBOT_TCP_API_PATH)
         set(FETCHCONTENT_BASE_DIR ${FETCHCONTENT_BASE_DIR_SAVE})
     else ()
         message(FATAL_ERROR
-                "API location was not specified. Please set MINIBOT_TCP_API_PATH or set MINIBOT_TCP_API_FETCH_FROM_GIT to on to fetch from git."
+                "Minibot TCP API location was not specified. Please set MINIBOT_TCP_API_PATH or set MINIBOT_TCP_API_FETCH_FROM_GIT to on to fetch from git."
                 )
     endif ()
 endif ()

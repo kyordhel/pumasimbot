@@ -600,6 +600,15 @@ int main(int argc, char *argv[])
  // it gets line inputs, function in ../utilities/inputs.h 
  get_inputs(argc,argv,&inputs);
 
+ if( virbot_using_real_robot() ){
+     // minibot_connect("127.0.0.1", 9000, 5);
+     minibot_connect("192.168.0.102", 9000, 10);
+     if(!minibot_connected()) return -1;
+     float v; int p;
+     get_battery_charge(&v, &p);
+     fprintf(stderr, "Battery charge: %0.1fV (%d%%)", v, p);
+ }
+
  //it sends the robot to the asked position
  num_steps=go_to(inputs);
 
