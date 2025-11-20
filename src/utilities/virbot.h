@@ -181,19 +181,26 @@ void get_sensor_values_real(coord coord_robot, float start_angle, float range,
 
 
 void get_intensity_angle_real(coord coord_robot, coord coord_destination, float* intensity, float* light_angle){
-	float x = 0, y = 0, angle, strength;
+	float x = 0, y = 0, angle;
 	minibot::slightr_t readings;
 
 	read_light_rpc(&readings);
+	uint8_t max_val_k = 0;
 
-	for(uint8_t k=0; k < 8; ++k) {
+	for(uint8_t k=1; k < 8; ++k) {
 		if((readings.data[k].angle < 0) || (readings.data[k].value < 0))
 			continue; // Skips error/defective/missread
-		x+= readings.data[k].value * cos(readings.data[k].angle);
-		y+= readings.data[k].value * sin(readings.data[k].angle);
+		if(readings.data[k].value > readings.data[max_val_k].value)
+			max_val_k = k;
 	}
+	x = readings.data[max_val_k].value * cos(readings.data[max_val_k].angle);
+	y = readings.data[max_val_k].value * sin(readings.data[max_val_k].angle);
+	*intensity   = readings.data[max_val_k].value;
+	// *light_angle = atan2(y, x) - coord_robot.anglec;
 	*light_angle = atan2(y, x);
-	*intensity   = sqrt(x*x + y*y);
+	if(angle >= 2*PI) angle-= 2*PI;
+	if(angle < 0) angle+= 2*PI;
+	*light_angle = angle;
 
 	// attraction_force = dif_vectors(coord_robot,coord_destination);
 	// mag = magnitude(attraction_force);
