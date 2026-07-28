@@ -78,17 +78,22 @@ bool read_batt_rpc(sbatteryr_t* reading){
 
 
 bool read_dist_rpc(sdistr_t* dist){
+	printf("read_dist_rpc\n");
 	if( dist == NULL ) return false;
-	*dist = (sdistr_t){0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1};
+	*dist = (sdistr_t){0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1};
 	// std::lock_guard<std::mutex> lock(minibot_client_mtx);
 	if( !minibot_connected() ) return false;
-	std::vector<avtuple_t> distances(8);
+	std::vector<avtuple_t> distances(12);
 	bool res = minibot_client->readDistanceSensors(distances);
-	dist->count = res ? distances.size() : 8;
-	for(uint16_t i = 0; i < 8; ++i){
+	dist->count = res ? distances.size() : 12;
+	printf("dist->count = %lu\n", distances.size());
+	printf("dist->data =");
+	for(uint16_t i = 0; i < 12; ++i){
 		if(res && (i < distances.size())) dist->data[i] = distances[i];
 		else dist->data[i] = (avtuple_t){-1, -1};
+		printf(" (%f, %f)", dist->data[i].angle, dist->data[i].value);
 	}
+	printf("\n");
 	return res;
 }
 

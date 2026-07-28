@@ -14,5 +14,5 @@ fi
 # sleep 0.3
 # xterm -geometry 160x27+100+480 -hold -e "cd bin/tcpCLIPS60 && ./clipscontrol" &
 # sleep 0.1
-xterm -geometry 80x27+585+100 -hold -e "cd bin/gui && python3 pumasimbot.py 9"
+xterm -geometry 80x27+585+100 -hold -e "cd bin/gui && python3 pumasimbot.py 1"
 

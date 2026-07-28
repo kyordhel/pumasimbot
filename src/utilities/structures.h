@@ -46,6 +46,9 @@ typedef struct _Inputs{
  int nn_rec;
  int nn_unk;
  int method;
+ /* Network */
+ char address[256];
+ int  port;
 } Inputs;
 
 #define MAX_TYPE 20

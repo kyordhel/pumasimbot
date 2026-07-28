@@ -156,6 +156,7 @@ void get_sensor_values_real(coord coord_robot, float start_angle, float range,
 	pos[1] = sensor_vector[0].y = coord_robot.yc;
 
 	read_dist_rpc(&readings);
+
 	for(uint8_t k=0; k < readings.count; ++k) {
 		if((readings.data[k].value > largest_value) || (readings.data[k].value < 0))
 			readings.data[k].value = largest_value;
@@ -164,12 +165,13 @@ void get_sensor_values_real(coord coord_robot, float start_angle, float range,
 		// Maybe add start_angle to each sensor?
 		sensor_vector[0].theta[k]   = readings.data[k].angle; // + start_angle;
 	}
+
 	#ifdef DEBUG
 		int pcount = 0;
-		printf("Obstacle sensors:");
+		printf("Obstacle sensors (0-%d):", readings.count);
 		for(uint8_t k=0; k < readings.count; ++k) {
-			// if((readings.data[k].angle < 0) || (readings.data[k].value < 0))
-				// continue;
+			if((readings.data[k].angle < 0) || (readings.data[k].value < 0))
+				continue;
 			++pcount;
 			printf("\n    (%3d°,% 0.3f)",
 				(int)(180 * readings.data[k].angle / 3.141592),
@@ -196,8 +198,8 @@ void get_intensity_angle_real(coord coord_robot, coord coord_destination, float*
 	x = readings.data[max_val_k].value * cos(readings.data[max_val_k].angle);
 	y = readings.data[max_val_k].value * sin(readings.data[max_val_k].angle);
 	*intensity   = readings.data[max_val_k].value;
-	// *light_angle = atan2(y, x) - coord_robot.anglec;
-	*light_angle = atan2(y, x);
+	*light_angle = atan2(y, x) - coord_robot.anglec;
+	// *light_angle = atan2(y, x);
 	if(angle >= 2*PI) angle-= 2*PI;
 	if(angle < 0) angle+= 2*PI;
 	*light_angle = angle;

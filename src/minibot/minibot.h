@@ -6,7 +6,7 @@
 
 struct {
 	uint16_t            count;
-	minibot::avtuple_t  data[8];
+	minibot::avtuple_t  data[16];
 }typedef sdistr_t;
 
 // Order battery, floor, light, distance
