@@ -599,10 +599,13 @@ int main(int argc, char *argv[])
 
  // it gets line inputs, function in ../utilities/inputs.h 
  get_inputs(argc,argv,&inputs);
+ if ( !strcmp(inputs.address, "127.0.0.1") )
+     virbot_use_virtual_robot();
+ else
+     virbot_use_real_robot();
 
  if( virbot_using_real_robot() ){
-     // minibot_connect("127.0.0.1", 9000, 5);
-     minibot_connect("192.168.0.102", 9000, 10);
+     minibot_connect(inputs.address, inputs.port, 10);
      if(!minibot_connected()) return -1;
      float v; int p;
      get_battery_charge(&v, &p);

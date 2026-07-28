@@ -35,7 +35,7 @@ int get_inputs(int argc, char **argv, Inputs *inputs)
     inputs->method = 2;
 
     /* Network */
-    strcpy(inputs->address, "192.168.0.1");
+    strcpy(inputs->address, "127.0.0.1");
     inputs->port = 9000;
 
 
