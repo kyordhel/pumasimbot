@@ -10,7 +10,7 @@ import math
 import random
 from random import randrange, uniform
 import time
-import os
+import re
 import numpy as np
 from initial_behaviors import *
 import time
@@ -19,9 +19,13 @@ import whereami
 #set softtabstop=0 noexpandtab 
 
 
+
+
+
+
 #---------------------------------------------------------------------------------------
 #	Global Variables
-
+ROBOT_IP_ADDRESS = '127.0.0.1'
 use_gui = True
 gui = None
 gui_planner = None
@@ -73,6 +77,43 @@ flg_line = 0
 largest_value = 0.0
 flg_start_clips = 1
 original_value = 0.0
+
+#-------------------------------------------------------------------------------------------
+#	Auxiliary functions and callbacks
+rx_ip_validator = re.compile(r'^(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})(:\d{1,5})?$')
+
+def str2ip_port(s):
+	try:
+		m = rx_ip_validator.fullmatch( s )
+		if m is None:
+			return None, None
+		ip, port = m.group(1, 2)
+
+		print(ip, port)
+
+		ip_parts = [ int(part) for part in ip.split('.') ]
+		if ip_parts[0] < 1 or ip_parts[0] > 254 or    \
+			ip_parts[1] > 254 or ip_parts[2] > 254 or \
+			ip_parts[3] < 1 or ip_parts[3] > 254:
+			return None, None
+
+		if (port is None) or len(port) < 2 or int(port[1:]) > 65535:
+			port = '9000'
+		else: port = port[1:]
+
+		return ip, port
+	except:
+		pass
+		# import traceback
+		# print(traceback.format_exc())
+	return None, None
+#end def
+
+
+def is_real_robot_ip(ip):
+	return (ip is not None) and isinstance(ip, str) and (len(ip) > 6) and ip != '127.0.0.1'
+#end def
+
 
 #-------------------------------------------------------------------------------------------
 #	TK Definitions
@@ -134,7 +175,27 @@ class PLANNER(object):
 		# Plot Path button
 		#PathButton = tk.Button(topLevelWindow, width = 20, text = 'Plot Path', bg = 'green', activebackground = 'green', command = togglePlotPath)
 		countPath = 0
-      		# Path files entry 
+			# IP files entry
+		def validate_ip(why, where, what, new):
+			ip, port = str2ip_port(new)
+			if ip is None:
+				robot_ip.config(bg = 'red')
+			else:
+				robot_ip.config(bg = 'black')
+				robot_ip.delete( 0, END )
+				label_robot_ip['text'] = 'Robot IP (Real)' if is_real_robot_ip(ip) else 'Robot IP (Virtual)'
+				return True
+			robot_ip.update_idletasks()
+			return str.isdigit(what) or what=='.' or what==':' or new == '' or (ip is not None)
+
+
+		validate_ip_cmd = topLevelWindow.register(validate_ip)
+		label_robot_ip = tk.Label(topLevelWindow, text =  'Robot IP')
+		robot_ip       = tk.Entry(topLevelWindow, width = 30, foreground='white', background='black', validate='all',
+			             validatecommand=(validate_ip_cmd, '%d', '%i', '%S', '%P'))
+		robot_ip.insert( 0, ROBOT_IP_ADDRESS )
+
+      		# Path files entry
 		label_path = tk.Label(topLevelWindow,text =  'Path')
 		path = tk.Entry(topLevelWindow, width = 30, foreground='white',background='black')
 		##self.path.insert ( 0, '/home/biorobotica/data/data_15/' )
@@ -155,7 +216,6 @@ class PLANNER(object):
 		file_robot.insert ( 0, ENVIRONMENT)
 		File_Name_robot = file_robot.get()
 
-		
 
 		# Check button movement
 		var_mov = IntVar()
@@ -1212,7 +1272,9 @@ class PLANNER(object):
 
 		#self.label_robot_command.grid({'row':0, 'column': 0})        
 		#self.robot_command.grid({'row':0, 'column': 1})        
-		label_path.grid({'row':1, 'column': 0})        
+		label_robot_ip.grid({'row':0, 'column': 0})
+		robot_ip.grid({'row':0, 'column': 1})
+		label_path.grid({'row':1, 'column': 0})
 		path.grid({'row':1, 'column': 1})        
 		label_file.grid({'row':2, 'column': 0})        
 		file.grid({'row':2, 'column': 1})        
@@ -1372,6 +1434,9 @@ class PLANNER(object):
 
 			#COMMAND ROBOT
 			command = robot_command_value + origin + destination + rest + " -out_file " + File_Output + " -nn_unk " + str(number_unk)  + " > " + PATH + "test_" + BEHAVIOR + ".dat"
+			if is_real_robot_ip( robot_ip.get() ):
+				robot_address, robot_port = str2ip_port( robot_ip.get() )
+				command += f' -address {robot_address} -port {robot_port}'
 			#command = robot_command_value + origin + destination + rest + " -out_file " + File_Output + " -nn_unk " + str(number_unk)
 
 			print ("Robot Command: \n", command)
@@ -1697,7 +1762,6 @@ class PLANNER(object):
 	initial()
 
 
-
 	def plot_test(self):
 		global C
 
@@ -1731,6 +1795,14 @@ class PLANNER(object):
 
         	polygon = C.create_polygon(XY, outline='green', fill='blue', width=1)
         	return polygon
+
+
+
+
+
+
+
+
 
 
 
