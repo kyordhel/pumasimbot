@@ -89,8 +89,6 @@ def str2ip_port(s):
 			return None, None
 		ip, port = m.group(1, 2)
 
-		print(ip, port)
-
 		ip_parts = [ int(part) for part in ip.split('.') ]
 		if ip_parts[0] < 1 or ip_parts[0] > 254 or    \
 			ip_parts[1] > 254 or ip_parts[2] > 254 or \
@@ -182,18 +180,21 @@ class PLANNER(object):
 				robot_ip.config(bg = 'red')
 			else:
 				robot_ip.config(bg = 'black')
-				robot_ip.delete( 0, END )
 				label_robot_ip['text'] = 'Robot IP (Real)' if is_real_robot_ip(ip) else 'Robot IP (Virtual)'
 				return True
 			robot_ip.update_idletasks()
 			return str.isdigit(what) or what=='.' or what==':' or new == '' or (ip is not None)
 
 
-		validate_ip_cmd = topLevelWindow.register(validate_ip)
-		label_robot_ip = tk.Label(topLevelWindow, text =  'Robot IP')
-		robot_ip       = tk.Entry(topLevelWindow, width = 30, foreground='white', background='black', validate='all',
-			             validatecommand=(validate_ip_cmd, '%d', '%i', '%S', '%P'))
-		robot_ip.insert( 0, ROBOT_IP_ADDRESS )
+		try:
+			validate_ip_cmd = topLevelWindow.register(validate_ip)
+			label_robot_ip = tk.Label(topLevelWindow, text =  'Robot IP')
+			robot_ip       = tk.Entry(topLevelWindow, width = 30, foreground='white', background='black', validate='all',
+				             validatecommand=(validate_ip_cmd, '%d', '%i', '%S', '%P'))
+			robot_ip.insert( 0, ROBOT_IP_ADDRESS )
+		except:
+			import traceback
+			print(traceback.format_exc())
 
       		# Path files entry
 		label_path = tk.Label(topLevelWindow,text =  'Path')
